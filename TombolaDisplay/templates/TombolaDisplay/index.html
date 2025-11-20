@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Bienvenue sur mon site de tombola </h1>
+    <a href="{% url 'get_ticket' participant.id tombola.id %}"><button>Acheter un tiquet?</button></a>
+    <a href="{% url 'tombola' participant.id %}"><button>Créer une tombolat</button></a>
+</body>
+</html>
